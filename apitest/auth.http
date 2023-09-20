@@ -1,0 +1,36 @@
+## Create User
+
+POST https://eventmakers-api.vercel.app/api/auth/register
+
+{
+    "name": "saras",
+    "email": "hello@saras007.com",
+    "password": "12345678"
+}
+
+
+## Login User
+
+## Create User
+
+POST https://eventmakers-api.vercel.app/api/auth/register
+
+{
+    "name": "saras",
+    "email": "hello@saras007.com",
+    "password": "12345678"
+}
+
+
+## Login User
+
+POST https://eventmakers-api.vercel.app/api/auth/login
+
+{
+    "email": "hello@saras007.com",
+    "password": "12345678"
+}
+
+
+
+
