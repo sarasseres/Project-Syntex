@@ -1,5 +1,9 @@
 import { AuthRegister } from '@/components/Auth/component/auth.Register';
 
-export const page = () => {
-  return <div></div>;
-};
+export default function Page() {
+  return (
+    <div>
+      <AuthRegister />
+    </div>
+  );
+}

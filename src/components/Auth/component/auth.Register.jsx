@@ -21,7 +21,6 @@ export const AuthRegister = () => {
     //   body: JSON.stringify({ name, email, password }), // Use email and password from loginData
     // });
     // const data = await res.json();
-    console.log(data);
   };
   return (
     <div>
