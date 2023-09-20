@@ -11,15 +11,16 @@ export const AuthLogin = () => {
   };
 
   const handleSubmitLoginData = async () => {
+    console.log('test');
     const { email, password } = loginData; // Destructure email and password from loginData
 
-    const res = await fetch('https://eventmakers-api.vercel.app/api/auth/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }), // Use email and password from loginData
-    });
+    // const res = await fetch('https://eventmakers-api.vercel.app/api/auth/login', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({ email, password }), // Use email and password from loginData
+    // });
 
     // Handle the response as needed
   };

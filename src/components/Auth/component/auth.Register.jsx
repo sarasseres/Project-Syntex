@@ -10,16 +10,17 @@ export const AuthRegister = () => {
     setRegisterData({ ...registerData, [name]: value });
   };
   const handleSubmitData = async () => {
-    const { name, email, password } = registerData; // Destructure email and password from loginData
+    console.log('yes');
+    // const { name, email, password } = registerData; // Destructure email and password from loginData
 
-    const res = await fetch('https://eventmakers-api.vercel.app/api/auth/register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, email, password }), // Use email and password from loginData
-    });
-    const data = await res.json();
+    // const res = await fetch('https://eventmakers-api.vercel.app/api/auth/register', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({ name, email, password }), // Use email and password from loginData
+    // });
+    // const data = await res.json();
     console.log(data);
   };
   return (
