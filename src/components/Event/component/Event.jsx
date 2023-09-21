@@ -1,5 +1,15 @@
-import React from 'react';
+import { EventCard } from "./event.Card";
 
 export const Event = () => {
-  return <div>event</div>;
+  return (
+    <main className="max-w-3xl m-auto my-12">
+      <div className="grid grid-cols-3 gap-4">
+        <EventCard />
+        <EventCard />
+        <EventCard />
+        <EventCard />
+        <EventCard />
+      </div>
+    </main>
+  );
 };

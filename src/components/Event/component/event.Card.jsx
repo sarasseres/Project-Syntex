@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const eventCard = () => {
-  return <div></div>;
+export const EventCard = () => {
+  return <div>Event Card</div>;
 };
