@@ -10,11 +10,11 @@ export default async function middleware(request) {
   try {
     const isValid = await jose.jwtVerify(token, secretKey);
     console.log(isValid);
+    return NextResponse.next();
   } catch (error) {
     console.log(error);
     return NextResponse.redirect(new URL('/login', request.url));
   }
-  return NextResponse.next();
 }
 
 export const config = {
