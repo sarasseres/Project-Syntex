@@ -2,8 +2,8 @@ import { EventCard } from "./event.Card";
 
 export const Event = () => {
   return (
-    <main className="max-w-3xl m-auto my-12">
-      <div className="grid grid-cols-3 gap-4">
+    <main>
+      <div className="grid grid-cols-2 gap-2">
         <EventCard />
         <EventCard />
         <EventCard />
