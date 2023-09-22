@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { AuthRegister } from './auth.Register';
+import Cookies from 'js-cookie';
 
 export const AuthLogin = () => {
   const initialLoginData = {
@@ -19,12 +20,10 @@ export const AuthLogin = () => {
 
     const res = await fetch('https://eventmakers-api.vercel.app/api/auth/login', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify({ email, password }), // Use email and password from loginData
     });
     const data = await res.json();
+    Cookies.set('token', data.token);
     console.log(data);
 
     // Handle the response as needed
