@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 export const EventCard = () => {
   return (
 <div className="card lg:card-side bg-base-100 shadow-xl">
-  <figure><img src="/event.jpg" alt="Album"/></figure>
+  
+  <figure><Image src="/event.jpg" width={200} height={200} alt="event-image"></Image></figure>
   <div className="card-body w-full">
     <h2 className="card-title">New events!</h2>
     <p>Click the button to register.</p>
