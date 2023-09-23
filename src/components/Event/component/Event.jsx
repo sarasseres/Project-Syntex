@@ -1,4 +1,4 @@
-import { EventCard } from "./event.Card";
+import { EventCard } from './event.Card';
 
 export const Event = () => {
   return (
