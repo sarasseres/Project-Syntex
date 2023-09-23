@@ -1,5 +1,5 @@
 import React from 'react';
 
-export const eventBookform = () => {
-  return <div></div>;
+export const EventBookform = () => {
+  return <div>Event Book Form</div>;
 };
